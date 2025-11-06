@@ -11,3 +11,20 @@ playButton.addEventListener("click", () => {
     playButton.style.transform = "scale(1.2) rotate(-10deg)";
   }, 300);
 
+window.addEventListener('DOMContentLoaded', () => {
+  const song = document.getElementById('song');
+  setTimeout(() => {
+    song.play().catch(err => {
+      console.log("🎵 Autoplay was blocked, waiting for user interaction.");
+    });
+  }, 100);
+});
+
+document.addEventListener("click", () => {
+  const song = document.getElementById("song");
+  if (song) {
+    song.play().catch((e) => {
+      console.log("Autoplay prevented:", e);
+    });
+  }
+});
