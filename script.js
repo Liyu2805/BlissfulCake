@@ -3,7 +3,7 @@ const birthdayGif = document.getElementById("birthdayGif");
 
 playButton.addEventListener("click", () => {
   // fade in GIF
-  birthdayGif.style.opacity = 1;
+birthdayGif.classList.add("show");
 
   // Optional: play button bounce
   playButton.style.transform = "scale(1.4) rotate(10deg)";
