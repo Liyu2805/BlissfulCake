@@ -6,16 +6,12 @@
 #birthdayGif.show {
   opacity: 1;             /* fully visible */
 }
-
 #playButton {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 70px;
-  height: 70px;
-  cursor: pointer;
-  z-index: 1200; /* above GIF */
-  transition: transform 0.2s;
+  width: 100px;    /* adjust size here */
+  height: auto;    /* keeps aspect ratio */
+  cursor: pointer; /* shows it’s clickable */
+  position: relative; /* stays where you put it */
+  z-index: 1100;   /* above GIF if needed */
 }
 
 #birthdayGif {
