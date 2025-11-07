@@ -25,10 +25,24 @@
 </head>
 <body>
   <img src="assets/birthday.gif" alt="Happy Birthday">
-  <audio autoplay loop>
-      <audio id="song" autoplay loop>
-        <source src="assets/HB.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
+ <audio id="song" autoplay loop>
+  <source src="assets/HB.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  // attempt autoplay when the page loads
+  window.addEventListener("DOMContentLoaded", () => {
+    const song = document.getElementById("song");
+    song.play().catch(() => {
+      console.log("Autoplay blocked — waiting for click");
+    });
+  });
+
+  // fallback: if autoplay is blocked, start on first user click
+  document.addEventListener("click", () => {
+    const song = document.getElementById("song");
+    song.play().catch(() => {});
+  });
+</script>
 </body>
 </html>
