@@ -1,17 +1,19 @@
-#playButton:hover {
-  transform: scale(1.2) rotate(-10deg);
-  filter: drop-shadow(0 0 10px pink);
-}
-
 #birthdayGif.show {
   opacity: 1;             /* fully visible */
 }
-#playButton {
-  width: 30px;    /* adjust size here */
-  height: 30px;    /* keeps aspect ratio */
-  cursor: pointer; /* shows it’s clickable */
-  position: relative; /* stays where you put it */
-  z-index: 1100;   /* above GIF if needed */
+
+#playbutton {
+  width: 70px;          /* make it small */
+  height: auto;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;       /* center it */
+  margin-top: 20px;
+  transition: 0.2s ease;
+}
+
+#playbutton:hover {
+  transform: scale(1.1);  /* tiny hover pop */
 }
 
 #birthdayGif {
