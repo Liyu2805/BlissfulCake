@@ -4,15 +4,16 @@
 
 #playButton {
   position: fixed;
-  bottom: 25px;              /* how far from bottom */
-  left: 50%;                 /* center horizontally */
+  bottom: 20px;             /* distance from bottom */
+  left: 50%;
   transform: translateX(-50%);
-  width: 70px;               /* small & cute */
+  width: 70px;              /* smaller size */
   height: auto;
   cursor: pointer;
-  z-index: 2000;             /* stays on top of everything */
-  transition: 0.25s ease;
+  z-index: 2000;
+  transition: transform 0.25s ease;
 }
+
 
 #playButton:hover {
   transform: translateX(-50%) scale(1.1);  /* hover bounce */
