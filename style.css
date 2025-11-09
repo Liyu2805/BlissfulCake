@@ -2,18 +2,20 @@
   opacity: 1;             /* fully visible */
 }
 
-#playbutton {
-  width: 70px;          /* make it small */
+#playButton {
+  position: fixed;
+  bottom: 25px;              /* how far from bottom */
+  left: 50%;                 /* center horizontally */
+  transform: translateX(-50%);
+  width: 70px;               /* small & cute */
   height: auto;
   cursor: pointer;
-  display: block;
-  margin: 0 auto;       /* center it */
-  margin-top: 20px;
-  transition: 0.2s ease;
+  z-index: 2000;             /* stays on top of everything */
+  transition: 0.25s ease;
 }
 
-#playbutton:hover {
-  transform: scale(1.1);  /* tiny hover pop */
+#playButton:hover {
+  transform: translateX(-50%) scale(1.1);  /* hover bounce */
 }
 
 #birthdayGif {
