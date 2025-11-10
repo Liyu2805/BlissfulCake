@@ -2,23 +2,6 @@
   opacity: 1;             /* fully visible */
 }
 
-#playButton {
-    position: fixed;          /* stick relative to viewport */
-    bottom: 20px;             /* distance from bottom */
-    left: 50%;                /* horizontal center */
-    transform: translateX(-50%); /* actual centering */
-    width: 50px;              /* bigger so it’s visible */
-    height: 50px;
-    cursor: pointer;
-    z-index: 1000;            /* on top of everything else */
-}
-
-#playButton:hover {
-    transform: translateX(-50%) scale(1.1); /* hover bounce */
-}
-
-
-
 #birthdayGif {
   position: fixed;
   top: 0;
@@ -30,3 +13,4 @@
   transition: opacity 0.7s ease; /* fade-in */
   z-index: 1000; /* behind button */
 }
+

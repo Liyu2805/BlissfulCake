@@ -1,7 +1,3 @@
-document.getElementById('mybutton').onclick = function() {
-    window.location.href = 'birthday.html';
-};
-
 const song = document.getElementById("song");
 
   // Try autoplay
